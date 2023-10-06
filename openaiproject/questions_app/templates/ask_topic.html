@@ -1,0 +1,6 @@
+<!-- chatapp/templates/chatapp/ask_question.html -->
+<form method="post" action="{% url 'ask_topic' %}">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit">Ask topic</button>
+</form>
